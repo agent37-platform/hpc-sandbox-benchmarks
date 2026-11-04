@@ -64,6 +64,8 @@ const fixture: ProviderMeta = {
 describe("@sandbox-benchmarks/schema providers", () => {
 	it("pins the registered provider id set", () => {
 		expect(PROVIDERS.map((provider) => provider.id).sort()).toEqual([
+			"agent37",
+			"agent37-vm",
 			"blaxel",
 			"boat",
 			"brezel",

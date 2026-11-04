@@ -1,0 +1,881 @@
+{
+  "schemaVersion": "6",
+  "runId": "a37-20261103",
+  "sha": "f3a7b2188bbcbc95d41fb7268bd7c11487aa74a7",
+  "generatedAt": "2026-11-03T15:01:23.466Z",
+  "replicateIndex": 2,
+  "targetSpec": {
+    "vcpus": 4,
+    "memoryGb": 8,
+    "diskGb": 40
+  },
+  "providers": [
+    {
+      "providerId": "agent37",
+      "costEvidence": [],
+      "artifactEvidence": [
+        {
+          "cell": {
+            "runId": "a37-20261103",
+            "providerId": "agent37",
+            "suite": "system",
+            "replicateIndex": 2
+          },
+          "sandboxId": "0ip2jb4ole",
+          "provenance": {
+            "source": "guest-fingerprint",
+            "requested": {
+              "kind": "image",
+              "ref": "ghcr.io/starslingdev/sandbox-benchmarks-toolchain:v8"
+            },
+            "fingerprint": {
+              "authority": "toolchain-manifest-v1",
+              "imageName": "sandbox-benchmarks-toolchain",
+              "imageVersion": "v8"
+            },
+            "reported": {
+              "kind": "image",
+              "ref": "ghcr.io/starslingdev/sandbox-benchmarks-toolchain:v8"
+            }
+          }
+        }
+      ],
+      "validationStatus": "validated",
+      "specMatched": true,
+      "observedSpecs": {
+        "cpuModel": "unknown",
+        "hostVcpus": 4,
+        "hostMemoryGb": 8,
+        "os": "Debian GNU/Linux 13 (trixie)",
+        "kernel": "4.19.0-redacted",
+        "virtualization": "docker",
+        "user": "root",
+        "publicIp": "",
+        "egressOrg": "redacted redacted",
+        "egressAsn": "redacted",
+        "egressOrgName": "redacted",
+        "reverseDns": "",
+        "city": "Hillsboro",
+        "region": "Oregon",
+        "country": "US",
+        "location": "45.5229,-122.9898",
+        "timezone": "America/Los_Angeles",
+        "productName": "redacted",
+        "networkPrefix": "redacted",
+        "asnSource": "cymru",
+        "geoSource": "ipinfo",
+        "detectedIsolation": "redacted",
+        "isolationClass": "user-kernel",
+        "isolationConfidence": "confirmed",
+        "machineVmm": "not-observable",
+        "containerRuntime": "redacted",
+        "vcpus": 4,
+        "memoryGb": 8,
+        "diskGb": 20
+      },
+      "hostMetadata": [
+        {
+          "source": "phoronix/result-file-to-json",
+          "sourceFile": "system/pts_git--metadata.json",
+          "fields": [
+            {
+              "path": "ci.client_version",
+              "value": "10.8.4"
+            },
+            {
+              "path": "ci.hardware.Disk",
+              "value": "20GB"
+            },
+            {
+              "path": "ci.hardware.Memory",
+              "value": "8GB"
+            },
+            {
+              "path": "ci.hardware.Motherboard",
+              "value": "redacted"
+            },
+            {
+              "path": "ci.hardware.Processor",
+              "value": "unknown (4 Cores)"
+            },
+            {
+              "path": "ci.identifier",
+              "value": "ci"
+            },
+            {
+              "path": "ci.software.Compiler",
+              "value": "GCC 14.2.0"
+            },
+            {
+              "path": "ci.software.File-System",
+              "value": "v9fs"
+            },
+            {
+              "path": "ci.software.Kernel",
+              "value": "4.19.0-redacted (x86_64)"
+            },
+            {
+              "path": "ci.software.OS",
+              "value": "Debian GNU/Linux 13"
+            },
+            {
+              "path": "ci.software.System Layer",
+              "value": "docker"
+            },
+            {
+              "path": "ci.timestamp",
+              "value": "2026-11-03 14:58:52"
+            },
+            {
+              "path": "ci.user",
+              "value": "root"
+            }
+          ]
+        },
+        {
+          "source": "phoronix/result-file-to-json",
+          "sourceFile": "system/pts_pybench--metadata.json",
+          "fields": [
+            {
+              "path": "ci.client_version",
+              "value": "10.8.4"
+            },
+            {
+              "path": "ci.data.python",
+              "value": "Python 3.13.14"
+            },
+            {
+              "path": "ci.hardware.Disk",
+              "value": "20GB"
+            },
+            {
+              "path": "ci.hardware.Memory",
+              "value": "8GB"
+            },
+            {
+              "path": "ci.hardware.Motherboard",
+              "value": "redacted"
+            },
+            {
+              "path": "ci.hardware.Processor",
+              "value": "unknown (4 Cores)"
+            },
+            {
+              "path": "ci.identifier",
+              "value": "ci"
+            },
+            {
+              "path": "ci.software.Compiler",
+              "value": "GCC 14.2.0"
+            },
+            {
+              "path": "ci.software.File-System",
+              "value": "v9fs"
+            },
+            {
+              "path": "ci.software.Kernel",
+              "value": "4.19.0-redacted (x86_64)"
+            },
+            {
+              "path": "ci.software.OS",
+              "value": "Debian GNU/Linux 13"
+            },
+            {
+              "path": "ci.software.System Layer",
+              "value": "docker"
+            },
+            {
+              "path": "ci.timestamp",
+              "value": "2026-11-03 14:49:26"
+            },
+            {
+              "path": "ci.user",
+              "value": "root"
+            }
+          ]
+        },
+        {
+          "source": "phoronix/result-file-to-json",
+          "sourceFile": "system/pts_sqlite-speedtest--metadata.json",
+          "fields": [
+            {
+              "path": "ci.client_version",
+              "value": "10.8.4"
+            },
+            {
+              "path": "ci.data.compiler-configuration",
+              "value": "--build=x86_64-linux-gnu --disable-vtable-verify --disable-werror --enable-bootstrap --enable-cet --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust --enable-libphobos-checking=release --enable-libstdcxx-backtrace --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-link-serialization=3 --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc=auto --enable-offload-defaulted --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-gcn/usr --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --program-prefix=x86_64-linux-gnu- --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-build-config=bootstrap-lto-lean --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-multilib-list=m32,m64,mx32 --with-target-system-zlib=auto --with-tune=generic --without-cuda-driver -v"
+            },
+            {
+              "path": "ci.hardware.Disk",
+              "value": "20GB"
+            },
+            {
+              "path": "ci.hardware.Memory",
+              "value": "8GB"
+            },
+            {
+              "path": "ci.hardware.Motherboard",
+              "value": "redacted"
+            },
+            {
+              "path": "ci.hardware.Processor",
+              "value": "unknown (4 Cores)"
+            },
+            {
+              "path": "ci.identifier",
+              "value": "ci"
+            },
+            {
+              "path": "ci.software.Compiler",
+              "value": "GCC 14.2.0"
+            },
+            {
+              "path": "ci.software.File-System",
+              "value": "v9fs"
+            },
+            {
+              "path": "ci.software.Kernel",
+              "value": "4.19.0-redacted (x86_64)"
+            },
+            {
+              "path": "ci.software.OS",
+              "value": "Debian GNU/Linux 13"
+            },
+            {
+              "path": "ci.software.System Layer",
+              "value": "docker"
+            },
+            {
+              "path": "ci.timestamp",
+              "value": "2026-11-03 14:50:21"
+            },
+            {
+              "path": "ci.user",
+              "value": "root"
+            }
+          ]
+        },
+        {
+          "source": "mise/system-provider",
+          "sourceFile": "system/system-provider.json",
+          "fields": [
+            {
+              "path": "acpi_creator",
+              "value": ""
+            },
+            {
+              "path": "acpi_oem",
+              "value": ""
+            },
+            {
+              "path": "acpi_oem_table",
+              "value": ""
+            },
+            {
+              "path": "asn",
+              "value": "redacted"
+            },
+            {
+              "path": "asn_source",
+              "value": "cymru"
+            },
+            {
+              "path": "bios_vendor",
+              "value": ""
+            },
+            {
+              "path": "block_devices",
+              "value": ""
+            },
+            {
+              "path": "bootlog_names_redacted",
+              "value": "true"
+            },
+            {
+              "path": "cap_sys_admin",
+              "value": "false"
+            },
+            {
+              "path": "cgroup_engine",
+              "value": ""
+            },
+            {
+              "path": "cgroup_root_writable",
+              "value": "false"
+            },
+            {
+              "path": "city",
+              "value": "Hillsboro"
+            },
+            {
+              "path": "confidential_computing",
+              "value": ""
+            },
+            {
+              "path": "container_candidates.0.id",
+              "value": "redacted"
+            },
+            {
+              "path": "container_candidates.0.reasons.0",
+              "value": "kernel version string names redacted (100)"
+            },
+            {
+              "path": "container_candidates.0.score",
+              "value": "100"
+            },
+            {
+              "path": "container_candidates.1.id",
+              "value": "docker-runc"
+            },
+            {
+              "path": "container_candidates.1.reasons.0",
+              "value": "/.dockerenv is present (weak: survives an image copy) (15)"
+            },
+            {
+              "path": "container_candidates.1.reasons.1",
+              "value": "a container detector reports Docker (weak: marker-file driven) (15)"
+            },
+            {
+              "path": "container_candidates.1.score",
+              "value": "30"
+            },
+            {
+              "path": "container_confidence",
+              "value": "confirmed"
+            },
+            {
+              "path": "container_markers",
+              "value": "dockerenv"
+            },
+            {
+              "path": "container_runner_up_score",
+              "value": "30"
+            },
+            {
+              "path": "container_runtime",
+              "value": "redacted"
+            },
+            {
+              "path": "container_score",
+              "value": "100"
+            },
+            {
+              "path": "country",
+              "value": "US"
+            },
+            {
+              "path": "cpu_hypervisor",
+              "value": ""
+            },
+            {
+              "path": "cpu_is_uml",
+              "value": "false"
+            },
+            {
+              "path": "cpuinfo_flags",
+              "value": "true"
+            },
+            {
+              "path": "detected_virt",
+              "value": "docker"
+            },
+            {
+              "path": "detected_virt_container",
+              "value": "docker"
+            },
+            {
+              "path": "detected_virt_vm",
+              "value": "none"
+            },
+            {
+              "path": "detected_virt_what",
+              "value": ""
+            },
+            {
+              "path": "dind_mode",
+              "value": "unavailable"
+            },
+            {
+              "path": "dind_readiness",
+              "value": "blocked"
+            },
+            {
+              "path": "dind_reasons",
+              "value": "no a dockerd or podman binary|no CAP_SYS_ADMIN|no a writable cgroup root"
+            },
+            {
+              "path": "docker_cli",
+              "value": "false"
+            },
+            {
+              "path": "docker_reachable",
+              "value": "false"
+            },
+            {
+              "path": "docker_server_version",
+              "value": ""
+            },
+            {
+              "path": "docker_socket",
+              "value": "false"
+            },
+            {
+              "path": "docker_storage_driver",
+              "value": ""
+            },
+            {
+              "path": "dockerd_binary",
+              "value": "false"
+            },
+            {
+              "path": "geo_source",
+              "value": "ipinfo"
+            },
+            {
+              "path": "has_acpi",
+              "value": "false"
+            },
+            {
+              "path": "has_fuse",
+              "value": "true"
+            },
+            {
+              "path": "has_hvc0",
+              "value": "false"
+            },
+            {
+              "path": "has_kvm",
+              "value": "false"
+            },
+            {
+              "path": "has_smbios",
+              "value": "true"
+            },
+            {
+              "path": "has_veth",
+              "value": "false"
+            },
+            {
+              "path": "has_virtiofs",
+              "value": "false"
+            },
+            {
+              "path": "has_vmbus",
+              "value": "false"
+            },
+            {
+              "path": "has_vsock",
+              "value": "false"
+            },
+            {
+              "path": "has_xen_node",
+              "value": "false"
+            },
+            {
+              "path": "hypervisor_flag",
+              "value": "false"
+            },
+            {
+              "path": "is_root",
+              "value": "true"
+            },
+            {
+              "path": "isolation_class",
+              "value": "user-kernel"
+            },
+            {
+              "path": "isolation_confidence",
+              "value": "confirmed"
+            },
+            {
+              "path": "isolation_runtime",
+              "value": "redacted"
+            },
+            {
+              "path": "isolation_why",
+              "value": "kernel version string names redacted (100)"
+            },
+            {
+              "path": "kernel_build",
+              "value": "Linux version 4.19.0-redacted #1 SMP Sun Jan 10 15:06:54 PST 2016"
+            },
+            {
+              "path": "kernel_cmdline_markers",
+              "value": ""
+            },
+            {
+              "path": "kernel_names_redacted",
+              "value": "true"
+            },
+            {
+              "path": "loc",
+              "value": "45.5229,-122.9898"
+            },
+            {
+              "path": "lsm_profile",
+              "value": ""
+            },
+            {
+              "path": "machine_confidence",
+              "value": "unknown"
+            },
+            {
+              "path": "machine_runner_up_score",
+              "value": "0"
+            },
+            {
+              "path": "machine_score",
+              "value": "0"
+            },
+            {
+              "path": "machine_vmm",
+              "value": "not-observable"
+            },
+            {
+              "path": "manufacturer",
+              "value": ""
+            },
+            {
+              "path": "masked_proc",
+              "value": "false"
+            },
+            {
+              "path": "mount_fstypes",
+              "value": "9p,cgroup,dev,devpts,proc,sysfs,tmpfs"
+            },
+            {
+              "path": "net_drivers",
+              "value": ""
+            },
+            {
+              "path": "net_ifaces",
+              "value": ""
+            },
+            {
+              "path": "org",
+              "value": "redacted redacted"
+            },
+            {
+              "path": "org_name",
+              "value": "redacted"
+            },
+            {
+              "path": "overlay_engine",
+              "value": ""
+            },
+            {
+              "path": "overlayfs_supported",
+              "value": "true"
+            },
+            {
+              "path": "pci_vendors",
+              "value": ""
+            },
+            {
+              "path": "podman_binary",
+              "value": "false"
+            },
+            {
+              "path": "prefix",
+              "value": "redacted"
+            },
+            {
+              "path": "product_name",
+              "value": "redacted"
+            },
+            {
+              "path": "public_ip",
+              "value": ""
+            },
+            {
+              "path": "region",
+              "value": "Oregon"
+            },
+            {
+              "path": "reverse_dns",
+              "value": ""
+            },
+            {
+              "path": "root_fstype",
+              "value": "9p"
+            },
+            {
+              "path": "schema_version",
+              "value": "2.0"
+            },
+            {
+              "path": "timezone",
+              "value": "America/Los_Angeles"
+            },
+            {
+              "path": "userns_mapped",
+              "value": "false"
+            },
+            {
+              "path": "virtio_devices",
+              "value": ""
+            },
+            {
+              "path": "virtio_transport",
+              "value": "none"
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "metricId": "git_seconds",
+          "samples": [59.695, 61.582],
+          "aggregates": {
+            "p50": 60.6385,
+            "p95": 61.48765,
+            "mean": 60.6385,
+            "stdev": 1.3343104960990155,
+            "min": 59.695,
+            "max": 61.582,
+            "n": 2
+          },
+          "sourceFile": "system/pts_git.xml",
+          "ptsSampleSource": "raw-string"
+        },
+        {
+          "metricId": "pybench_milliseconds",
+          "samples": [585, 587],
+          "aggregates": {
+            "p50": 586,
+            "p95": 586.9,
+            "mean": 586,
+            "stdev": 1.4142135623730951,
+            "min": 585,
+            "max": 587,
+            "n": 2
+          },
+          "sourceFile": "system/pts_pybench.xml",
+          "ptsSampleSource": "raw-string",
+          "appVersion": "2018-02-16"
+        },
+        {
+          "metricId": "sqlite_speedtest_seconds",
+          "samples": [246.268, 245.429],
+          "aggregates": {
+            "p50": 245.8485,
+            "p95": 246.22605,
+            "mean": 245.8485,
+            "stdev": 0.5932625894155124,
+            "min": 245.429,
+            "max": 246.268,
+            "n": 2
+          },
+          "sourceFile": "system/pts_sqlite-speedtest.xml",
+          "ptsSampleSource": "raw-string",
+          "appVersion": "3.30"
+        },
+        {
+          "metricId": "usd_per_hour",
+          "samples": [0.012054794520547946],
+          "aggregates": {
+            "p50": 0.012054794520547946,
+            "p95": 0.012054794520547946,
+            "mean": 0.012054794520547946,
+            "stdev": 0,
+            "min": 0.012054794520547946,
+            "max": 0.012054794520547946,
+            "n": 1
+          },
+          "derived": true
+        }
+      ],
+      "suitesCovered": ["system"],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "agent37-vm",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "blaxel",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "boat",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "brezel",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "daytona-container",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "daytona-vm",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "digitalocean",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "e2b",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "freestyle",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "microsandbox-cloud",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "modal-gvisor",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "modal-vm",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "namespace",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "novita",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "runcloud",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "tama",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "vercel",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    }
+  ]
+}

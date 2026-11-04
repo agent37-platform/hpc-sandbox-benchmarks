@@ -1,0 +1,734 @@
+{
+  "schemaVersion": "6",
+  "runId": "a37-20261103",
+  "sha": "f3a7b2188bbcbc95d41fb7268bd7c11487aa74a7",
+  "generatedAt": "2026-11-03T14:22:47.002Z",
+  "replicateIndex": 2,
+  "targetSpec": {
+    "vcpus": 4,
+    "memoryGb": 8,
+    "diskGb": 40
+  },
+  "providers": [
+    {
+      "providerId": "agent37",
+      "costEvidence": [],
+      "artifactEvidence": [
+        {
+          "cell": {
+            "runId": "a37-20261103",
+            "providerId": "agent37",
+            "suite": "disk",
+            "replicateIndex": 2
+          },
+          "sandboxId": "1w6xmia5nk",
+          "provenance": {
+            "source": "guest-fingerprint",
+            "requested": {
+              "kind": "image",
+              "ref": "ghcr.io/starslingdev/sandbox-benchmarks-toolchain:v8"
+            },
+            "fingerprint": {
+              "authority": "toolchain-manifest-v1",
+              "imageName": "sandbox-benchmarks-toolchain",
+              "imageVersion": "v8"
+            },
+            "reported": {
+              "kind": "image",
+              "ref": "ghcr.io/starslingdev/sandbox-benchmarks-toolchain:v8"
+            }
+          }
+        }
+      ],
+      "validationStatus": "validated",
+      "specMatched": true,
+      "observedSpecs": {
+        "cpuModel": "unknown",
+        "hostVcpus": 4,
+        "hostMemoryGb": 8,
+        "os": "Debian GNU/Linux 13 (trixie)",
+        "kernel": "4.19.0-redacted",
+        "virtualization": "docker",
+        "user": "root",
+        "vcpus": 4,
+        "memoryGb": 8,
+        "diskGb": 20,
+        "detectedIsolation": "redacted",
+        "isolationClass": "user-kernel",
+        "isolationConfidence": "confirmed",
+        "machineVmm": "not-observable",
+        "containerRuntime": "redacted"
+      },
+      "hostMetadata": [
+        {
+          "source": "phoronix/result-file-to-json",
+          "sourceFile": "disk/pts_fio-rand-read--metadata.json",
+          "fields": [
+            {
+              "path": "ci.client_version",
+              "value": "10.8.4"
+            },
+            {
+              "path": "ci.data.compiler-configuration",
+              "value": "--build=x86_64-linux-gnu --disable-vtable-verify --disable-werror --enable-bootstrap --enable-cet --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust --enable-libphobos-checking=release --enable-libstdcxx-backtrace --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-link-serialization=3 --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc=auto --enable-offload-defaulted --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-gcn/usr --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --program-prefix=x86_64-linux-gnu- --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-build-config=bootstrap-lto-lean --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-multilib-list=m32,m64,mx32 --with-target-system-zlib=auto --with-tune=generic --without-cuda-driver -v"
+            },
+            {
+              "path": "ci.hardware.Disk",
+              "value": "20GB"
+            },
+            {
+              "path": "ci.hardware.Memory",
+              "value": "8GB"
+            },
+            {
+              "path": "ci.hardware.Motherboard",
+              "value": "MX33-BS1-V1"
+            },
+            {
+              "path": "ci.hardware.Processor",
+              "value": "unknown (4 Cores)"
+            },
+            {
+              "path": "ci.identifier",
+              "value": "ci"
+            },
+            {
+              "path": "ci.software.Compiler",
+              "value": "GCC 14.2.0"
+            },
+            {
+              "path": "ci.software.File-System",
+              "value": "v9fs"
+            },
+            {
+              "path": "ci.software.Kernel",
+              "value": "4.19.0-redacted (x86_64)"
+            },
+            {
+              "path": "ci.software.OS",
+              "value": "Debian GNU/Linux 13"
+            },
+            {
+              "path": "ci.software.System Layer",
+              "value": "docker"
+            },
+            {
+              "path": "ci.timestamp",
+              "value": "2026-11-03 14:14:47"
+            },
+            {
+              "path": "ci.user",
+              "value": "root"
+            }
+          ]
+        },
+        {
+          "source": "phoronix/result-file-to-json",
+          "sourceFile": "disk/pts_fio-rand-write--metadata.json",
+          "fields": [
+            {
+              "path": "ci.client_version",
+              "value": "10.8.4"
+            },
+            {
+              "path": "ci.data.compiler-configuration",
+              "value": "--build=x86_64-linux-gnu --disable-vtable-verify --disable-werror --enable-bootstrap --enable-cet --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust --enable-libphobos-checking=release --enable-libstdcxx-backtrace --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-link-serialization=3 --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc=auto --enable-offload-defaulted --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-gcn/usr --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --program-prefix=x86_64-linux-gnu- --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-build-config=bootstrap-lto-lean --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-multilib-list=m32,m64,mx32 --with-target-system-zlib=auto --with-tune=generic --without-cuda-driver -v"
+            },
+            {
+              "path": "ci.hardware.Disk",
+              "value": "20GB"
+            },
+            {
+              "path": "ci.hardware.Memory",
+              "value": "8GB"
+            },
+            {
+              "path": "ci.hardware.Motherboard",
+              "value": "MX33-BS1-V1"
+            },
+            {
+              "path": "ci.hardware.Processor",
+              "value": "unknown (4 Cores)"
+            },
+            {
+              "path": "ci.identifier",
+              "value": "ci"
+            },
+            {
+              "path": "ci.software.Compiler",
+              "value": "GCC 14.2.0"
+            },
+            {
+              "path": "ci.software.File-System",
+              "value": "v9fs"
+            },
+            {
+              "path": "ci.software.Kernel",
+              "value": "4.19.0-redacted (x86_64)"
+            },
+            {
+              "path": "ci.software.OS",
+              "value": "Debian GNU/Linux 13"
+            },
+            {
+              "path": "ci.software.System Layer",
+              "value": "docker"
+            },
+            {
+              "path": "ci.timestamp",
+              "value": "2026-11-03 14:18:04"
+            },
+            {
+              "path": "ci.user",
+              "value": "root"
+            }
+          ]
+        },
+        {
+          "source": "phoronix/result-file-to-json",
+          "sourceFile": "disk/pts_fio-seq-read--metadata.json",
+          "fields": [
+            {
+              "path": "ci.client_version",
+              "value": "10.8.4"
+            },
+            {
+              "path": "ci.data.compiler-configuration",
+              "value": "--build=x86_64-linux-gnu --disable-vtable-verify --disable-werror --enable-bootstrap --enable-cet --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust --enable-libphobos-checking=release --enable-libstdcxx-backtrace --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-link-serialization=3 --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc=auto --enable-offload-defaulted --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-gcn/usr --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --program-prefix=x86_64-linux-gnu- --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-build-config=bootstrap-lto-lean --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-multilib-list=m32,m64,mx32 --with-target-system-zlib=auto --with-tune=generic --without-cuda-driver -v"
+            },
+            {
+              "path": "ci.hardware.Disk",
+              "value": "20GB"
+            },
+            {
+              "path": "ci.hardware.Memory",
+              "value": "8GB"
+            },
+            {
+              "path": "ci.hardware.Motherboard",
+              "value": "MX33-BS1-V1"
+            },
+            {
+              "path": "ci.hardware.Processor",
+              "value": "unknown (4 Cores)"
+            },
+            {
+              "path": "ci.identifier",
+              "value": "ci"
+            },
+            {
+              "path": "ci.software.Compiler",
+              "value": "GCC 14.2.0"
+            },
+            {
+              "path": "ci.software.File-System",
+              "value": "v9fs"
+            },
+            {
+              "path": "ci.software.Kernel",
+              "value": "4.19.0-redacted (x86_64)"
+            },
+            {
+              "path": "ci.software.OS",
+              "value": "Debian GNU/Linux 13"
+            },
+            {
+              "path": "ci.software.System Layer",
+              "value": "docker"
+            },
+            {
+              "path": "ci.timestamp",
+              "value": "2026-11-03 14:08:21"
+            },
+            {
+              "path": "ci.user",
+              "value": "root"
+            }
+          ]
+        },
+        {
+          "source": "phoronix/result-file-to-json",
+          "sourceFile": "disk/pts_fio-seq-write--metadata.json",
+          "fields": [
+            {
+              "path": "ci.client_version",
+              "value": "10.8.4"
+            },
+            {
+              "path": "ci.data.compiler-configuration",
+              "value": "--build=x86_64-linux-gnu --disable-vtable-verify --disable-werror --enable-bootstrap --enable-cet --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust --enable-libphobos-checking=release --enable-libstdcxx-backtrace --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-link-serialization=3 --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc=auto --enable-offload-defaulted --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-gcn/usr --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --program-prefix=x86_64-linux-gnu- --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-build-config=bootstrap-lto-lean --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-multilib-list=m32,m64,mx32 --with-target-system-zlib=auto --with-tune=generic --without-cuda-driver -v"
+            },
+            {
+              "path": "ci.hardware.Disk",
+              "value": "20GB"
+            },
+            {
+              "path": "ci.hardware.Memory",
+              "value": "8GB"
+            },
+            {
+              "path": "ci.hardware.Motherboard",
+              "value": "MX33-BS1-V1"
+            },
+            {
+              "path": "ci.hardware.Processor",
+              "value": "unknown (4 Cores)"
+            },
+            {
+              "path": "ci.identifier",
+              "value": "ci"
+            },
+            {
+              "path": "ci.software.Compiler",
+              "value": "GCC 14.2.0"
+            },
+            {
+              "path": "ci.software.File-System",
+              "value": "v9fs"
+            },
+            {
+              "path": "ci.software.Kernel",
+              "value": "4.19.0-redacted (x86_64)"
+            },
+            {
+              "path": "ci.software.OS",
+              "value": "Debian GNU/Linux 13"
+            },
+            {
+              "path": "ci.software.System Layer",
+              "value": "docker"
+            },
+            {
+              "path": "ci.timestamp",
+              "value": "2026-11-03 14:11:35"
+            },
+            {
+              "path": "ci.user",
+              "value": "root"
+            }
+          ]
+        },
+        {
+          "source": "phoronix/result-file-to-json",
+          "sourceFile": "disk/pts_hardlink--metadata.json",
+          "fields": [
+            {
+              "path": "ci.client_version",
+              "value": "10.8.4"
+            },
+            {
+              "path": "ci.data.compiler-configuration",
+              "value": "--build=x86_64-linux-gnu --disable-vtable-verify --disable-werror --enable-bootstrap --enable-cet --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust --enable-libphobos-checking=release --enable-libstdcxx-backtrace --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-link-serialization=3 --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc=auto --enable-offload-defaulted --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-gcn/usr --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --program-prefix=x86_64-linux-gnu- --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-build-config=bootstrap-lto-lean --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-multilib-list=m32,m64,mx32 --with-target-system-zlib=auto --with-tune=generic --without-cuda-driver -v"
+            },
+            {
+              "path": "ci.hardware.Disk",
+              "value": "20GB"
+            },
+            {
+              "path": "ci.hardware.Memory",
+              "value": "8GB"
+            },
+            {
+              "path": "ci.hardware.Motherboard",
+              "value": "MX33-BS1-V1"
+            },
+            {
+              "path": "ci.hardware.Processor",
+              "value": "unknown (4 Cores)"
+            },
+            {
+              "path": "ci.identifier",
+              "value": "ci"
+            },
+            {
+              "path": "ci.software.Compiler",
+              "value": "GCC 14.2.0"
+            },
+            {
+              "path": "ci.software.File-System",
+              "value": "v9fs"
+            },
+            {
+              "path": "ci.software.Kernel",
+              "value": "4.19.0-redacted (x86_64)"
+            },
+            {
+              "path": "ci.software.OS",
+              "value": "Debian GNU/Linux 13"
+            },
+            {
+              "path": "ci.software.System Layer",
+              "value": "docker"
+            },
+            {
+              "path": "ci.timestamp",
+              "value": "2026-11-03 14:21:22"
+            },
+            {
+              "path": "ci.user",
+              "value": "root"
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "metricId": "fio_type_random_read_engine_linux_aio_direct_yes_block_size_4kb_job_count_1_disk_target_default_test_directory_iops",
+          "samples": [86100, 85700],
+          "aggregates": {
+            "p50": 85900,
+            "p95": 86080,
+            "mean": 85900,
+            "stdev": 282.842712474619,
+            "min": 85700,
+            "max": 86100,
+            "n": 2
+          },
+          "sourceFile": "disk/pts_fio-rand-read.xml",
+          "ptsSampleSource": "raw-string",
+          "appVersion": "3.36",
+          "arguments": "randread libaio 1 4k 1"
+        },
+        {
+          "metricId": "fio_type_random_read_engine_linux_aio_direct_yes_block_size_4kb_job_count_1_disk_target_default_test_directory_mb_per_s",
+          "samples": [352.321536, 351.27296],
+          "aggregates": {
+            "p50": 351.79724799999997,
+            "p95": 352.2691072,
+            "mean": 351.79724799999997,
+            "stdev": 0.7414552001894632,
+            "min": 351.27296,
+            "max": 352.321536,
+            "n": 2
+          },
+          "sourceFile": "disk/pts_fio-rand-read.xml",
+          "ptsSampleSource": "raw-string",
+          "appVersion": "3.36",
+          "arguments": "randread libaio 1 4k 1"
+        },
+        {
+          "metricId": "fio_type_random_write_engine_linux_aio_direct_yes_block_size_4kb_job_count_1_disk_target_default_test_directory_iops",
+          "samples": [79700, 75700],
+          "aggregates": {
+            "p50": 77700,
+            "p95": 79500,
+            "mean": 77700,
+            "stdev": 2828.42712474619,
+            "min": 75700,
+            "max": 79700,
+            "n": 2
+          },
+          "sourceFile": "disk/pts_fio-rand-write.xml",
+          "ptsSampleSource": "raw-string",
+          "appVersion": "3.36",
+          "arguments": "randwrite libaio 1 4k 1"
+        },
+        {
+          "metricId": "fio_type_random_write_engine_linux_aio_direct_yes_block_size_4kb_job_count_1_disk_target_default_test_directory_mb_per_s",
+          "samples": [327.155712, 310.378496],
+          "aggregates": {
+            "p50": 318.767104,
+            "p95": 326.3168512,
+            "mean": 318.767104,
+            "stdev": 11.86328320303143,
+            "min": 310.378496,
+            "max": 327.155712,
+            "n": 2
+          },
+          "sourceFile": "disk/pts_fio-rand-write.xml",
+          "ptsSampleSource": "raw-string",
+          "appVersion": "3.36",
+          "arguments": "randwrite libaio 1 4k 1"
+        },
+        {
+          "metricId": "fio_type_sequential_read_engine_linux_aio_direct_yes_block_size_1mb_job_count_1_disk_target_default_test_directory_iops",
+          "samples": [13000, 13500],
+          "aggregates": {
+            "p50": 13250,
+            "p95": 13475,
+            "mean": 13250,
+            "stdev": 353.5533905932738,
+            "min": 13000,
+            "max": 13500,
+            "n": 2
+          },
+          "sourceFile": "disk/pts_fio-seq-read.xml",
+          "ptsSampleSource": "raw-string",
+          "appVersion": "3.36",
+          "arguments": "read libaio 1 1m 1"
+        },
+        {
+          "metricId": "fio_type_sequential_read_engine_linux_aio_direct_yes_block_size_1mb_job_count_1_disk_target_default_test_directory_mb_per_s",
+          "samples": [13636.5211648, 14173.3920768],
+          "aggregates": {
+            "p50": 13904.9566208,
+            "p95": 14146.5485312,
+            "mean": 13904.9566208,
+            "stdev": 379.6250624970071,
+            "min": 13636.5211648,
+            "max": 14173.3920768,
+            "n": 2
+          },
+          "sourceFile": "disk/pts_fio-seq-read.xml",
+          "ptsSampleSource": "raw-string",
+          "appVersion": "3.36",
+          "arguments": "read libaio 1 1m 1"
+        },
+        {
+          "metricId": "fio_type_sequential_write_engine_linux_aio_direct_yes_block_size_1mb_job_count_1_disk_target_default_test_directory_iops",
+          "samples": [9674, 10600],
+          "aggregates": {
+            "p50": 10137,
+            "p95": 10553.7,
+            "mean": 10137,
+            "stdev": 654.780879378743,
+            "min": 9674,
+            "max": 10600,
+            "n": 2
+          },
+          "sourceFile": "disk/pts_fio-seq-write.xml",
+          "ptsSampleSource": "raw-string",
+          "appVersion": "3.36",
+          "arguments": "write libaio 1 1m 1"
+        },
+        {
+          "metricId": "fio_type_sequential_write_engine_linux_aio_direct_yes_block_size_1mb_job_count_1_disk_target_default_test_directory_mb_per_s",
+          "samples": [10146.021376, 11059.5407872],
+          "aggregates": {
+            "p50": 10602.7810816,
+            "p95": 11013.86481664,
+            "mean": 10602.7810816,
+            "stdev": 645.9557704050615,
+            "min": 10146.021376,
+            "max": 11059.5407872,
+            "n": 2
+          },
+          "sourceFile": "disk/pts_fio-seq-write.xml",
+          "ptsSampleSource": "raw-string",
+          "appVersion": "3.36",
+          "arguments": "write libaio 1 1m 1"
+        },
+        {
+          "metricId": "hardlink_bogo_ops_per_s",
+          "samples": [3.12, 3.12],
+          "aggregates": {
+            "p50": 3.12,
+            "p95": 3.12,
+            "mean": 3.12,
+            "stdev": 0,
+            "min": 3.12,
+            "max": 3.12,
+            "n": 2
+          },
+          "sourceFile": "disk/pts_hardlink.xml",
+          "ptsSampleSource": "raw-string",
+          "appVersion": "0.16"
+        },
+        {
+          "metricId": "usd_per_hour",
+          "samples": [0.012054794520547946],
+          "aggregates": {
+            "p50": 0.012054794520547946,
+            "p95": 0.012054794520547946,
+            "mean": 0.012054794520547946,
+            "stdev": 0,
+            "min": 0.012054794520547946,
+            "max": 0.012054794520547946,
+            "n": 1
+          },
+          "derived": true
+        }
+      ],
+      "suitesCovered": ["disk"],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "agent37-vm",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "blaxel",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "boat",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "brezel",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "daytona-container",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "daytona-vm",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "digitalocean",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "e2b",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "freestyle",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "microsandbox-cloud",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "modal-gvisor",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "modal-vm",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "namespace",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "novita",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "runcloud",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "tama",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "vercel",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    }
+  ]
+}

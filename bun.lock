@@ -75,6 +75,20 @@
         "typescript": "catalog:",
       },
     },
+    "packages/agent37": {
+      "name": "@sandbox-benchmarks/agent37",
+      "version": "0.0.0",
+      "dependencies": {
+        "@sandbox-benchmarks/driver": "workspace:*",
+        "@sandbox-benchmarks/schema": "workspace:*",
+        "arktype": "catalog:",
+      },
+      "devDependencies": {
+        "@repo/tsconfig": "workspace:*",
+        "@types/bun": "catalog:",
+        "typescript": "catalog:",
+      },
+    },
     "packages/blaxel": {
       "name": "@sandbox-benchmarks/blaxel",
       "version": "0.0.0",
@@ -989,6 +1003,8 @@
     "@rollup/pluginutils": ["@rollup/pluginutils@5.4.0", "", { "dependencies": { "@types/estree": "^1.0.0", "estree-walker": "^2.0.2", "picomatch": "^4.0.2" }, "peerDependencies": { "rollup": "^1.20.0||^2.0.0||^3.0.0||^4.0.0" }, "optionalPeers": ["rollup"] }, "sha512-MfPp06CjRLfXQ3wY0R8vJDYBy/MvVcc9OulEfR0B8Iv9ko+GCNaRZ+EpJYFl27LhKsZK0o420sYCRHCjfCgeUg=="],
 
     "@run-cloud/sdk": ["@run-cloud/sdk@0.9.0", "", { "dependencies": { "ws": "^8.21.0" } }, "sha512-wBVUs3wZJzbcJBnNMxpJevn9TchWvzE+Z8iHjHfFDSyjGOLyR8cIj6eW/rDRsupXr6KzpKOmFDG4vPkemM9uYA=="],
+
+    "@sandbox-benchmarks/agent37": ["@sandbox-benchmarks/agent37@workspace:packages/agent37"],
 
     "@sandbox-benchmarks/blaxel": ["@sandbox-benchmarks/blaxel@workspace:packages/blaxel"],
 

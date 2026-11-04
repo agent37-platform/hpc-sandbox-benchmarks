@@ -14,6 +14,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@sandbox-benchmarks/agent37": "workspace:*",
     "@sandbox-benchmarks/blaxel": "workspace:*",
     "@sandbox-benchmarks/boat": "workspace:*",
     "@sandbox-benchmarks/brezel": "workspace:*",

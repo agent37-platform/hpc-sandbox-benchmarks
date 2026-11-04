@@ -1,0 +1,939 @@
+{
+  "schemaVersion": "6",
+  "runId": "a37-20261103",
+  "sha": "f3a7b2188bbcbc95d41fb7268bd7c11487aa74a7",
+  "generatedAt": "2026-11-03T14:38:02.305Z",
+  "replicateIndex": 2,
+  "targetSpec": {
+    "vcpus": 4,
+    "memoryGb": 8,
+    "diskGb": 40
+  },
+  "providers": [
+    {
+      "providerId": "agent37",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "agent37-vm",
+      "costEvidence": [],
+      "artifactEvidence": [
+        {
+          "cell": {
+            "runId": "a37-20261103",
+            "providerId": "agent37-vm",
+            "suite": "system",
+            "replicateIndex": 2
+          },
+          "sandboxId": "yieyk2k3ig",
+          "provenance": {
+            "source": "guest-fingerprint",
+            "requested": {
+              "kind": "image",
+              "ref": "ghcr.io/starslingdev/sandbox-benchmarks-toolchain:v8"
+            },
+            "fingerprint": {
+              "authority": "toolchain-manifest-v1",
+              "imageName": "sandbox-benchmarks-toolchain",
+              "imageVersion": "v8"
+            },
+            "reported": {
+              "kind": "image",
+              "ref": "ghcr.io/starslingdev/sandbox-benchmarks-toolchain:v8"
+            }
+          }
+        }
+      ],
+      "validationStatus": "validated",
+      "specMatched": true,
+      "observedSpecs": {
+        "cpuModel": "Intel(R) Xeon(R) E-2386G CPU @ 3.50GHz",
+        "hostVcpus": 4,
+        "hostMemoryGb": 8,
+        "os": "Debian GNU/Linux 13 (trixie)",
+        "kernel": "7.0.0-38-generic",
+        "virtualization": "docker",
+        "user": "root",
+        "publicIp": "",
+        "egressOrg": "redacted redacted",
+        "egressAsn": "redacted",
+        "egressOrgName": "redacted",
+        "reverseDns": "",
+        "city": "Hillsboro",
+        "region": "Oregon",
+        "country": "US",
+        "location": "45.5229,-122.9898",
+        "timezone": "America/Los_Angeles",
+        "manufacturer": "redacted",
+        "productName": "redacted",
+        "biosVendor": "redacted",
+        "networkPrefix": "redacted",
+        "asnSource": "cymru",
+        "geoSource": "ipinfo",
+        "detectedIsolation": "redacted",
+        "isolationClass": "microvm",
+        "isolationConfidence": "confirmed",
+        "machineVmm": "redacted",
+        "containerRuntime": "none",
+        "vcpus": 4,
+        "memoryGb": 7.75,
+        "diskGb": 19.5
+      },
+      "hostMetadata": [
+        {
+          "source": "phoronix/result-file-to-json",
+          "sourceFile": "system/pts_git--metadata.json",
+          "fields": [
+            {
+              "path": "ci.client_version",
+              "value": "10.8.4"
+            },
+            {
+              "path": "ci.data.cpu-microcode",
+              "value": "0x1"
+            },
+            {
+              "path": "ci.data.kernel-extra-details",
+              "value": "Transparent Huge Pages: madvise"
+            },
+            {
+              "path": "ci.data.security",
+              "value": "gather_data_sampling: Unknown: Dependent on hypervisor status + ghostwrite: Not affected + indirect_target_selection: Mitigation of Aligned branch/return thunks + itlb_multihit: Not affected + l1tf: Not affected + mds: Not affected + meltdown: Not affected + mmio_stale_data: Mitigation of Clear buffers; SMT Host state unknown + old_microcode: Not affected + reg_file_data_sampling: Not affected + retbleed: Mitigation of Enhanced IBRS + spec_rstack_overflow: Not affected + spec_store_bypass: Mitigation of SSB disabled via prctl + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Enhanced / Automatic IBRS; IBPB: conditional; PBRSB-eIBRS: SW sequence; BHI: SW loop KVM: SW loop + srbds: Not affected + tsa: Not affected + tsx_async_abort: Not affected + vmscape: Not affected"
+            },
+            {
+              "path": "ci.hardware.Disk",
+              "value": "20GB"
+            },
+            {
+              "path": "ci.hardware.Memory",
+              "value": "8GB"
+            },
+            {
+              "path": "ci.hardware.Motherboard",
+              "value": "redacted redacted"
+            },
+            {
+              "path": "ci.hardware.Processor",
+              "value": "Intel Xeon E-2386G (4 Cores)"
+            },
+            {
+              "path": "ci.identifier",
+              "value": "ci"
+            },
+            {
+              "path": "ci.software.Compiler",
+              "value": "GCC 14.2.0"
+            },
+            {
+              "path": "ci.software.File-System",
+              "value": "ext4"
+            },
+            {
+              "path": "ci.software.Kernel",
+              "value": "7.0.0-38-generic (x86_64)"
+            },
+            {
+              "path": "ci.software.OS",
+              "value": "Debian GNU/Linux 13"
+            },
+            {
+              "path": "ci.software.System Layer",
+              "value": "docker"
+            },
+            {
+              "path": "ci.timestamp",
+              "value": "2026-11-03 14:36:13"
+            },
+            {
+              "path": "ci.user",
+              "value": "root"
+            }
+          ]
+        },
+        {
+          "source": "phoronix/result-file-to-json",
+          "sourceFile": "system/pts_pybench--metadata.json",
+          "fields": [
+            {
+              "path": "ci.client_version",
+              "value": "10.8.4"
+            },
+            {
+              "path": "ci.data.cpu-microcode",
+              "value": "0x1"
+            },
+            {
+              "path": "ci.data.kernel-extra-details",
+              "value": "Transparent Huge Pages: madvise"
+            },
+            {
+              "path": "ci.data.python",
+              "value": "Python 3.13.14"
+            },
+            {
+              "path": "ci.data.security",
+              "value": "gather_data_sampling: Unknown: Dependent on hypervisor status + ghostwrite: Not affected + indirect_target_selection: Mitigation of Aligned branch/return thunks + itlb_multihit: Not affected + l1tf: Not affected + mds: Not affected + meltdown: Not affected + mmio_stale_data: Mitigation of Clear buffers; SMT Host state unknown + old_microcode: Not affected + reg_file_data_sampling: Not affected + retbleed: Mitigation of Enhanced IBRS + spec_rstack_overflow: Not affected + spec_store_bypass: Mitigation of SSB disabled via prctl + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Enhanced / Automatic IBRS; IBPB: conditional; PBRSB-eIBRS: SW sequence; BHI: SW loop KVM: SW loop + srbds: Not affected + tsa: Not affected + tsx_async_abort: Not affected + vmscape: Not affected"
+            },
+            {
+              "path": "ci.hardware.Disk",
+              "value": "20GB"
+            },
+            {
+              "path": "ci.hardware.Memory",
+              "value": "8GB"
+            },
+            {
+              "path": "ci.hardware.Motherboard",
+              "value": "redacted redacted"
+            },
+            {
+              "path": "ci.hardware.Processor",
+              "value": "Intel Xeon E-2386G (4 Cores)"
+            },
+            {
+              "path": "ci.identifier",
+              "value": "ci"
+            },
+            {
+              "path": "ci.software.Compiler",
+              "value": "GCC 14.2.0"
+            },
+            {
+              "path": "ci.software.File-System",
+              "value": "ext4"
+            },
+            {
+              "path": "ci.software.Kernel",
+              "value": "7.0.0-38-generic (x86_64)"
+            },
+            {
+              "path": "ci.software.OS",
+              "value": "Debian GNU/Linux 13"
+            },
+            {
+              "path": "ci.software.System Layer",
+              "value": "docker"
+            },
+            {
+              "path": "ci.timestamp",
+              "value": "2026-11-03 14:33:35"
+            },
+            {
+              "path": "ci.user",
+              "value": "root"
+            }
+          ]
+        },
+        {
+          "source": "phoronix/result-file-to-json",
+          "sourceFile": "system/pts_sqlite-speedtest--metadata.json",
+          "fields": [
+            {
+              "path": "ci.client_version",
+              "value": "10.8.4"
+            },
+            {
+              "path": "ci.data.compiler-configuration",
+              "value": "--build=x86_64-linux-gnu --disable-vtable-verify --disable-werror --enable-bootstrap --enable-cet --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust --enable-libphobos-checking=release --enable-libstdcxx-backtrace --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-link-serialization=3 --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc=auto --enable-offload-defaulted --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-gcn/usr --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --program-prefix=x86_64-linux-gnu- --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-build-config=bootstrap-lto-lean --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-multilib-list=m32,m64,mx32 --with-target-system-zlib=auto --with-tune=generic --without-cuda-driver -v"
+            },
+            {
+              "path": "ci.data.cpu-microcode",
+              "value": "0x1"
+            },
+            {
+              "path": "ci.data.kernel-extra-details",
+              "value": "Transparent Huge Pages: madvise"
+            },
+            {
+              "path": "ci.data.security",
+              "value": "gather_data_sampling: Unknown: Dependent on hypervisor status + ghostwrite: Not affected + indirect_target_selection: Mitigation of Aligned branch/return thunks + itlb_multihit: Not affected + l1tf: Not affected + mds: Not affected + meltdown: Not affected + mmio_stale_data: Mitigation of Clear buffers; SMT Host state unknown + old_microcode: Not affected + reg_file_data_sampling: Not affected + retbleed: Mitigation of Enhanced IBRS + spec_rstack_overflow: Not affected + spec_store_bypass: Mitigation of SSB disabled via prctl + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Enhanced / Automatic IBRS; IBPB: conditional; PBRSB-eIBRS: SW sequence; BHI: SW loop KVM: SW loop + srbds: Not affected + tsa: Not affected + tsx_async_abort: Not affected + vmscape: Not affected"
+            },
+            {
+              "path": "ci.hardware.Disk",
+              "value": "20GB"
+            },
+            {
+              "path": "ci.hardware.Memory",
+              "value": "8GB"
+            },
+            {
+              "path": "ci.hardware.Motherboard",
+              "value": "redacted redacted"
+            },
+            {
+              "path": "ci.hardware.Processor",
+              "value": "Intel Xeon E-2386G (4 Cores)"
+            },
+            {
+              "path": "ci.identifier",
+              "value": "ci"
+            },
+            {
+              "path": "ci.software.Compiler",
+              "value": "GCC 14.2.0"
+            },
+            {
+              "path": "ci.software.File-System",
+              "value": "ext4"
+            },
+            {
+              "path": "ci.software.Kernel",
+              "value": "7.0.0-38-generic (x86_64)"
+            },
+            {
+              "path": "ci.software.OS",
+              "value": "Debian GNU/Linux 13"
+            },
+            {
+              "path": "ci.software.System Layer",
+              "value": "docker"
+            },
+            {
+              "path": "ci.timestamp",
+              "value": "2026-11-03 14:34:18"
+            },
+            {
+              "path": "ci.user",
+              "value": "root"
+            }
+          ]
+        },
+        {
+          "source": "mise/system-provider",
+          "sourceFile": "system/system-provider.json",
+          "fields": [
+            {
+              "path": "acpi_creator",
+              "value": "RVAT"
+            },
+            {
+              "path": "acpi_oem",
+              "value": "redacted"
+            },
+            {
+              "path": "acpi_oem_table",
+              "value": "CHDSDT"
+            },
+            {
+              "path": "asn",
+              "value": "redacted"
+            },
+            {
+              "path": "asn_source",
+              "value": "cymru"
+            },
+            {
+              "path": "bios_vendor",
+              "value": "redacted"
+            },
+            {
+              "path": "block_devices",
+              "value": "loop0,loop1,loop2,loop3,loop4,loop5,loop6,loop7,vda,vdb,vdc,vdd,vde"
+            },
+            {
+              "path": "bootlog_names_redacted",
+              "value": "false"
+            },
+            {
+              "path": "cap_sys_admin",
+              "value": "true"
+            },
+            {
+              "path": "cgroup_engine",
+              "value": ""
+            },
+            {
+              "path": "cgroup_root_writable",
+              "value": "true"
+            },
+            {
+              "path": "city",
+              "value": "Hillsboro"
+            },
+            {
+              "path": "confidential_computing",
+              "value": ""
+            },
+            {
+              "path": "container_candidates.0.id",
+              "value": "docker-runc"
+            },
+            {
+              "path": "container_candidates.0.reasons.0",
+              "value": "/.dockerenv is present (weak: survives an image copy) (15)"
+            },
+            {
+              "path": "container_candidates.0.reasons.1",
+              "value": "a container detector reports Docker (weak: marker-file driven) (15)"
+            },
+            {
+              "path": "container_candidates.0.score",
+              "value": "30"
+            },
+            {
+              "path": "container_confidence",
+              "value": "none"
+            },
+            {
+              "path": "container_markers",
+              "value": "dockerenv"
+            },
+            {
+              "path": "container_runner_up_score",
+              "value": "0"
+            },
+            {
+              "path": "container_runtime",
+              "value": "none"
+            },
+            {
+              "path": "container_score",
+              "value": "0"
+            },
+            {
+              "path": "country",
+              "value": "US"
+            },
+            {
+              "path": "cpu_hypervisor",
+              "value": "KVM"
+            },
+            {
+              "path": "cpu_is_uml",
+              "value": "false"
+            },
+            {
+              "path": "cpuinfo_flags",
+              "value": "true"
+            },
+            {
+              "path": "detected_virt",
+              "value": "docker"
+            },
+            {
+              "path": "detected_virt_container",
+              "value": "docker"
+            },
+            {
+              "path": "detected_virt_vm",
+              "value": "kvm"
+            },
+            {
+              "path": "detected_virt_what",
+              "value": ""
+            },
+            {
+              "path": "dind_mode",
+              "value": "unavailable"
+            },
+            {
+              "path": "dind_readiness",
+              "value": "blocked"
+            },
+            {
+              "path": "dind_reasons",
+              "value": "no a dockerd or podman binary"
+            },
+            {
+              "path": "docker_cli",
+              "value": "false"
+            },
+            {
+              "path": "docker_reachable",
+              "value": "false"
+            },
+            {
+              "path": "docker_server_version",
+              "value": ""
+            },
+            {
+              "path": "docker_socket",
+              "value": "false"
+            },
+            {
+              "path": "docker_storage_driver",
+              "value": ""
+            },
+            {
+              "path": "dockerd_binary",
+              "value": "false"
+            },
+            {
+              "path": "geo_source",
+              "value": "ipinfo"
+            },
+            {
+              "path": "has_acpi",
+              "value": "true"
+            },
+            {
+              "path": "has_fuse",
+              "value": "true"
+            },
+            {
+              "path": "has_hvc0",
+              "value": "true"
+            },
+            {
+              "path": "has_kvm",
+              "value": "true"
+            },
+            {
+              "path": "has_smbios",
+              "value": "true"
+            },
+            {
+              "path": "has_veth",
+              "value": "false"
+            },
+            {
+              "path": "has_virtiofs",
+              "value": "false"
+            },
+            {
+              "path": "has_vmbus",
+              "value": "false"
+            },
+            {
+              "path": "has_vsock",
+              "value": "true"
+            },
+            {
+              "path": "has_xen_node",
+              "value": "false"
+            },
+            {
+              "path": "hypervisor_flag",
+              "value": "true"
+            },
+            {
+              "path": "is_root",
+              "value": "true"
+            },
+            {
+              "path": "isolation_class",
+              "value": "microvm"
+            },
+            {
+              "path": "isolation_confidence",
+              "value": "confirmed"
+            },
+            {
+              "path": "isolation_runtime",
+              "value": "redacted"
+            },
+            {
+              "path": "isolation_why",
+              "value": "ACPI OEM id redacted (100)|SMBIOS names redacted (100)|console on virtio-console (15)"
+            },
+            {
+              "path": "kernel_build",
+              "value": "Linux version 7.0.0-38-generic (buildd@lcy02-amd64-070) (x86_64-linux-gnu-gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0, GNU ld (GNU Binutils for Ubuntu) 2.46) #38-Ubuntu SMP PREEMPT_DYNAMIC Fri Sep 4 09:10:14 UTC 2026"
+            },
+            {
+              "path": "kernel_cmdline_markers",
+              "value": "panic=1,no-kvmapf,console=hvc0"
+            },
+            {
+              "path": "kernel_names_redacted",
+              "value": "false"
+            },
+            {
+              "path": "loc",
+              "value": "45.5229,-122.9898"
+            },
+            {
+              "path": "lsm_profile",
+              "value": "unconfined"
+            },
+            {
+              "path": "machine_candidates.0.id",
+              "value": "redacted"
+            },
+            {
+              "path": "machine_candidates.0.reasons.0",
+              "value": "ACPI OEM id redacted (100)"
+            },
+            {
+              "path": "machine_candidates.0.reasons.1",
+              "value": "SMBIOS names redacted (100)"
+            },
+            {
+              "path": "machine_candidates.0.reasons.2",
+              "value": "console on virtio-console (15)"
+            },
+            {
+              "path": "machine_candidates.0.score",
+              "value": "215"
+            },
+            {
+              "path": "machine_candidates.1.id",
+              "value": "vm-unidentified"
+            },
+            {
+              "path": "machine_candidates.1.reasons.0",
+              "value": "a hypervisor or virtio guest is visible, but its VMM is unidentified (40)"
+            },
+            {
+              "path": "machine_candidates.1.score",
+              "value": "40"
+            },
+            {
+              "path": "machine_confidence",
+              "value": "confirmed"
+            },
+            {
+              "path": "machine_runner_up_score",
+              "value": "0"
+            },
+            {
+              "path": "machine_score",
+              "value": "215"
+            },
+            {
+              "path": "machine_vmm",
+              "value": "redacted"
+            },
+            {
+              "path": "manufacturer",
+              "value": "redacted"
+            },
+            {
+              "path": "masked_proc",
+              "value": "false"
+            },
+            {
+              "path": "mount_fstypes",
+              "value": "cgroup2,devpts,devtmpfs,ext4,mqueue,overlay,proc,sysfs,tmpfs"
+            },
+            {
+              "path": "net_drivers",
+              "value": "virtio_net"
+            },
+            {
+              "path": "net_ifaces",
+              "value": "eth0"
+            },
+            {
+              "path": "org",
+              "value": "redacted redacted"
+            },
+            {
+              "path": "org_name",
+              "value": "redacted"
+            },
+            {
+              "path": "overlay_engine",
+              "value": ""
+            },
+            {
+              "path": "overlayfs_supported",
+              "value": "true"
+            },
+            {
+              "path": "pci_vendors",
+              "value": "1af4,1b36,8086"
+            },
+            {
+              "path": "podman_binary",
+              "value": "false"
+            },
+            {
+              "path": "prefix",
+              "value": "redacted"
+            },
+            {
+              "path": "product_name",
+              "value": "redacted"
+            },
+            {
+              "path": "public_ip",
+              "value": ""
+            },
+            {
+              "path": "region",
+              "value": "Oregon"
+            },
+            {
+              "path": "reverse_dns",
+              "value": ""
+            },
+            {
+              "path": "root_fstype",
+              "value": "overlay"
+            },
+            {
+              "path": "schema_version",
+              "value": "2.0"
+            },
+            {
+              "path": "timezone",
+              "value": "America/Los_Angeles"
+            },
+            {
+              "path": "userns_mapped",
+              "value": "false"
+            },
+            {
+              "path": "virtio_devices",
+              "value": "blk,console,net,rng,vsock"
+            },
+            {
+              "path": "virtio_transport",
+              "value": "pci"
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "metricId": "git_seconds",
+          "samples": [43.992, 44.502],
+          "aggregates": {
+            "p50": 44.247,
+            "p95": 44.4765,
+            "mean": 44.247,
+            "stdev": 0.36062445840514284,
+            "min": 43.992,
+            "max": 44.502,
+            "n": 2
+          },
+          "sourceFile": "system/pts_git.xml",
+          "ptsSampleSource": "raw-string"
+        },
+        {
+          "metricId": "pybench_milliseconds",
+          "samples": [562, 559],
+          "aggregates": {
+            "p50": 560.5,
+            "p95": 561.85,
+            "mean": 560.5,
+            "stdev": 2.1213203435596424,
+            "min": 559,
+            "max": 562,
+            "n": 2
+          },
+          "sourceFile": "system/pts_pybench.xml",
+          "ptsSampleSource": "raw-string",
+          "appVersion": "2018-02-16"
+        },
+        {
+          "metricId": "sqlite_speedtest_seconds",
+          "samples": [48.875, 49.016],
+          "aggregates": {
+            "p50": 48.945499999999996,
+            "p95": 49.00895,
+            "mean": 48.945499999999996,
+            "stdev": 0.09970205614730447,
+            "min": 48.875,
+            "max": 49.016,
+            "n": 2
+          },
+          "sourceFile": "system/pts_sqlite-speedtest.xml",
+          "ptsSampleSource": "raw-string",
+          "appVersion": "3.30"
+        },
+        {
+          "metricId": "usd_per_hour",
+          "samples": [0.030136986301369864],
+          "aggregates": {
+            "p50": 0.030136986301369864,
+            "p95": 0.030136986301369864,
+            "mean": 0.030136986301369864,
+            "stdev": 0,
+            "min": 0.030136986301369864,
+            "max": 0.030136986301369864,
+            "n": 1
+          },
+          "derived": true
+        }
+      ],
+      "suitesCovered": ["system"],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "blaxel",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "boat",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "brezel",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "daytona-container",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "daytona-vm",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "digitalocean",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "e2b",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "freestyle",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "microsandbox-cloud",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "modal-gvisor",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "modal-vm",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "namespace",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "novita",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "runcloud",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "tama",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "vercel",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    }
+  ]
+}

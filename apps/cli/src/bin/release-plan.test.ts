@@ -81,6 +81,8 @@ describe("buildReleasePlan matrix", () => {
 			"freestyle",
 			"brezel",
 			"digitalocean",
+			"agent37",
+			"agent37-vm",
 		]);
 	});
 

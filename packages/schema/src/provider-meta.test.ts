@@ -32,6 +32,8 @@ const REQUIRED_INPUTS = {
 	freestyle: ["FREESTYLE_API_KEY"],
 	brezel: ["BREZEL_API_KEY", "BREZEL_API_URL", "BREZEL_PROJECT_ID", "BREZEL_ENVIRONMENT_REVISION"],
 	digitalocean: ["DIGITAL_OCEAN_TOKEN"],
+	agent37: ["AGENT37_API_KEY"],
+	"agent37-vm": ["AGENT37_API_KEY"],
 } as const satisfies Record<ProviderId, readonly string[]>;
 
 const ARTIFACT_KINDS = {
@@ -51,6 +53,8 @@ const ARTIFACT_KINDS = {
 	freestyle: "baked",
 	brezel: "none",
 	digitalocean: "image",
+	agent37: "image",
+	"agent37-vm": "image",
 } as const satisfies Record<ProviderId, (typeof REGISTRY)[ProviderId]["artifact"]["kind"]>;
 
 const BAKED = {

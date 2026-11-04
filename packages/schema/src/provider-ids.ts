@@ -22,6 +22,8 @@ export const PROVIDER_IDS = [
 	"freestyle",
 	"brezel",
 	"digitalocean",
+	"agent37",
+	"agent37-vm",
 ] as const;
 
 export type ProviderId = (typeof PROVIDER_IDS)[number];

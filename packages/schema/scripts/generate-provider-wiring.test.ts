@@ -104,13 +104,14 @@ describe("provider wiring projections", () => {
 		expect(bindings.filter(({ owners }) => owners.length > 1)).toEqual([
 			{ domain: "daytona", owners: ["daytona-vm", "daytona-container"] },
 			{ domain: "modal", owners: ["modal-gvisor", "modal-vm"] },
+			{ domain: "agent37", owners: ["agent37", "agent37-vm"] },
 		]);
 		// A provider that shares no credential is its own domain — never a stray custom name.
 		expect(
 			bindings.filter(({ domain, owners }) => owners.length === 1 && owners[0] !== domain),
 		).toEqual([]);
 		expect(renderAccountConcurrencyGroup("")).toBe(
-			`group: benchmark-account-\${{ (matrix.provider == 'daytona-vm' || matrix.provider == 'daytona-container') && 'daytona' || (matrix.provider == 'modal-gvisor' || matrix.provider == 'modal-vm') && 'modal' || matrix.provider }}`,
+			`group: benchmark-account-\${{ (matrix.provider == 'daytona-vm' || matrix.provider == 'daytona-container') && 'daytona' || (matrix.provider == 'modal-gvisor' || matrix.provider == 'modal-vm') && 'modal' || (matrix.provider == 'agent37' || matrix.provider == 'agent37-vm') && 'agent37' || matrix.provider }}`,
 		);
 	});
 
@@ -272,6 +273,8 @@ describe("provider wiring projections", () => {
 			"freestyle",
 			"brezel",
 			"digitalocean",
+			"agent37",
+			"agent37-vm",
 		]);
 		expect([...PROVIDER_IDS].filter((id) => fleet.waivers[id] !== undefined)).toEqual([]);
 

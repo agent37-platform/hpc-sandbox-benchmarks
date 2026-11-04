@@ -25,6 +25,8 @@ on:
           - 'freestyle'
           - 'brezel'
           - 'digitalocean'
+          - 'agent37'
+          - 'agent37-vm'
           # <<< end generated: provider-options
       suite:
         description: Suite to run

@@ -1,0 +1,949 @@
+{
+  "schemaVersion": "6",
+  "runId": "a37-20261103",
+  "sha": "f3a7b2188bbcbc95d41fb7268bd7c11487aa74a7",
+  "generatedAt": "2026-11-03T18:59:57.724Z",
+  "replicateIndex": 2,
+  "targetSpec": {
+    "vcpus": 4,
+    "memoryGb": 8,
+    "diskGb": 40
+  },
+  "providers": [
+    {
+      "providerId": "agent37",
+      "costEvidence": [],
+      "artifactEvidence": [
+        {
+          "cell": {
+            "runId": "a37-20261103",
+            "providerId": "agent37",
+            "suite": "network",
+            "replicateIndex": 2
+          },
+          "sandboxId": "04s36m4yno",
+          "provenance": {
+            "source": "guest-fingerprint",
+            "requested": {
+              "kind": "image",
+              "ref": "ghcr.io/starslingdev/sandbox-benchmarks-toolchain:v8"
+            },
+            "fingerprint": {
+              "authority": "toolchain-manifest-v1",
+              "imageName": "sandbox-benchmarks-toolchain",
+              "imageVersion": "v8"
+            },
+            "reported": {
+              "kind": "image",
+              "ref": "ghcr.io/starslingdev/sandbox-benchmarks-toolchain:v8"
+            }
+          }
+        }
+      ],
+      "validationStatus": "validated",
+      "specMatched": true,
+      "observedSpecs": {
+        "cpuModel": "unknown",
+        "hostVcpus": 4,
+        "hostMemoryGb": 8,
+        "os": "Debian GNU/Linux 13 (trixie)",
+        "kernel": "4.19.0-redacted",
+        "virtualization": "docker",
+        "user": "root",
+        "vcpus": 4,
+        "memoryGb": 8,
+        "diskGb": 20,
+        "detectedIsolation": "redacted",
+        "isolationClass": "user-kernel",
+        "isolationConfidence": "confirmed",
+        "machineVmm": "not-observable",
+        "containerRuntime": "redacted"
+      },
+      "hostMetadata": [
+        {
+          "source": "phoronix/result-file-to-json",
+          "sourceFile": "network/pts_iperf-tcp-p1--metadata.json",
+          "fields": [
+            {
+              "path": "ci.client_version",
+              "value": "10.8.4"
+            },
+            {
+              "path": "ci.data.compiler-configuration",
+              "value": "--build=x86_64-linux-gnu --disable-vtable-verify --disable-werror --enable-bootstrap --enable-cet --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust --enable-libphobos-checking=release --enable-libstdcxx-backtrace --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-link-serialization=3 --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc=auto --enable-offload-defaulted --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-gcn/usr --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --program-prefix=x86_64-linux-gnu- --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-build-config=bootstrap-lto-lean --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-multilib-list=m32,m64,mx32 --with-target-system-zlib=auto --with-tune=generic --without-cuda-driver -v"
+            },
+            {
+              "path": "ci.hardware.Disk",
+              "value": "20GB"
+            },
+            {
+              "path": "ci.hardware.Memory",
+              "value": "8GB"
+            },
+            {
+              "path": "ci.hardware.Motherboard",
+              "value": "redacted"
+            },
+            {
+              "path": "ci.hardware.Processor",
+              "value": "unknown (4 Cores)"
+            },
+            {
+              "path": "ci.identifier",
+              "value": "ci"
+            },
+            {
+              "path": "ci.software.Compiler",
+              "value": "GCC 14.2.0"
+            },
+            {
+              "path": "ci.software.File-System",
+              "value": "v9fs"
+            },
+            {
+              "path": "ci.software.Kernel",
+              "value": "4.19.0-redacted (x86_64)"
+            },
+            {
+              "path": "ci.software.OS",
+              "value": "Debian GNU/Linux 13"
+            },
+            {
+              "path": "ci.software.System Layer",
+              "value": "docker"
+            },
+            {
+              "path": "ci.timestamp",
+              "value": "2026-11-03 18:55:14"
+            },
+            {
+              "path": "ci.user",
+              "value": "root"
+            }
+          ]
+        },
+        {
+          "source": "phoronix/result-file-to-json",
+          "sourceFile": "network/pts_iperf-tcp-p10--metadata.json",
+          "fields": [
+            {
+              "path": "ci.client_version",
+              "value": "10.8.4"
+            },
+            {
+              "path": "ci.data.compiler-configuration",
+              "value": "--build=x86_64-linux-gnu --disable-vtable-verify --disable-werror --enable-bootstrap --enable-cet --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust --enable-libphobos-checking=release --enable-libstdcxx-backtrace --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-link-serialization=3 --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc=auto --enable-offload-defaulted --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-gcn/usr --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --program-prefix=x86_64-linux-gnu- --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-build-config=bootstrap-lto-lean --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-multilib-list=m32,m64,mx32 --with-target-system-zlib=auto --with-tune=generic --without-cuda-driver -v"
+            },
+            {
+              "path": "ci.hardware.Disk",
+              "value": "20GB"
+            },
+            {
+              "path": "ci.hardware.Memory",
+              "value": "8GB"
+            },
+            {
+              "path": "ci.hardware.Motherboard",
+              "value": "redacted"
+            },
+            {
+              "path": "ci.hardware.Processor",
+              "value": "unknown (4 Cores)"
+            },
+            {
+              "path": "ci.identifier",
+              "value": "ci"
+            },
+            {
+              "path": "ci.software.Compiler",
+              "value": "GCC 14.2.0"
+            },
+            {
+              "path": "ci.software.File-System",
+              "value": "v9fs"
+            },
+            {
+              "path": "ci.software.Kernel",
+              "value": "4.19.0-redacted (x86_64)"
+            },
+            {
+              "path": "ci.software.OS",
+              "value": "Debian GNU/Linux 13"
+            },
+            {
+              "path": "ci.software.System Layer",
+              "value": "docker"
+            },
+            {
+              "path": "ci.timestamp",
+              "value": "2026-11-03 18:55:56"
+            },
+            {
+              "path": "ci.user",
+              "value": "root"
+            }
+          ]
+        },
+        {
+          "source": "phoronix/result-file-to-json",
+          "sourceFile": "network/pts_iperf-udp-10g--metadata.json",
+          "fields": [
+            {
+              "path": "ci.client_version",
+              "value": "10.8.4"
+            },
+            {
+              "path": "ci.data.compiler-configuration",
+              "value": "--build=x86_64-linux-gnu --disable-vtable-verify --disable-werror --enable-bootstrap --enable-cet --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust --enable-libphobos-checking=release --enable-libstdcxx-backtrace --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-link-serialization=3 --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc=auto --enable-offload-defaulted --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-gcn/usr --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --program-prefix=x86_64-linux-gnu- --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-build-config=bootstrap-lto-lean --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-multilib-list=m32,m64,mx32 --with-target-system-zlib=auto --with-tune=generic --without-cuda-driver -v"
+            },
+            {
+              "path": "ci.hardware.Disk",
+              "value": "20GB"
+            },
+            {
+              "path": "ci.hardware.Memory",
+              "value": "8GB"
+            },
+            {
+              "path": "ci.hardware.Motherboard",
+              "value": "redacted"
+            },
+            {
+              "path": "ci.hardware.Processor",
+              "value": "unknown (4 Cores)"
+            },
+            {
+              "path": "ci.identifier",
+              "value": "ci"
+            },
+            {
+              "path": "ci.software.Compiler",
+              "value": "GCC 14.2.0"
+            },
+            {
+              "path": "ci.software.File-System",
+              "value": "v9fs"
+            },
+            {
+              "path": "ci.software.Kernel",
+              "value": "4.19.0-redacted (x86_64)"
+            },
+            {
+              "path": "ci.software.OS",
+              "value": "Debian GNU/Linux 13"
+            },
+            {
+              "path": "ci.software.System Layer",
+              "value": "docker"
+            },
+            {
+              "path": "ci.timestamp",
+              "value": "2026-11-03 18:56:39"
+            },
+            {
+              "path": "ci.user",
+              "value": "root"
+            }
+          ]
+        },
+        {
+          "source": "phoronix/result-file-to-json",
+          "sourceFile": "network/pts_iperf-wan-download--metadata.json",
+          "fields": [
+            {
+              "path": "ci.client_version",
+              "value": "10.8.4"
+            },
+            {
+              "path": "ci.data.compiler-configuration",
+              "value": "--build=x86_64-linux-gnu --disable-vtable-verify --disable-werror --enable-bootstrap --enable-cet --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust --enable-libphobos-checking=release --enable-libstdcxx-backtrace --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-link-serialization=3 --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc=auto --enable-offload-defaulted --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-gcn/usr --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --program-prefix=x86_64-linux-gnu- --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-build-config=bootstrap-lto-lean --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-multilib-list=m32,m64,mx32 --with-target-system-zlib=auto --with-tune=generic --without-cuda-driver -v"
+            },
+            {
+              "path": "ci.hardware.Disk",
+              "value": "20GB"
+            },
+            {
+              "path": "ci.hardware.Memory",
+              "value": "8GB"
+            },
+            {
+              "path": "ci.hardware.Motherboard",
+              "value": "redacted"
+            },
+            {
+              "path": "ci.hardware.Processor",
+              "value": "unknown (4 Cores)"
+            },
+            {
+              "path": "ci.identifier",
+              "value": "ci"
+            },
+            {
+              "path": "ci.software.Compiler",
+              "value": "GCC 14.2.0"
+            },
+            {
+              "path": "ci.software.File-System",
+              "value": "v9fs"
+            },
+            {
+              "path": "ci.software.Kernel",
+              "value": "4.19.0-redacted (x86_64)"
+            },
+            {
+              "path": "ci.software.OS",
+              "value": "Debian GNU/Linux 13"
+            },
+            {
+              "path": "ci.software.System Layer",
+              "value": "docker"
+            },
+            {
+              "path": "ci.timestamp",
+              "value": "2026-11-03 18:57:46"
+            },
+            {
+              "path": "ci.user",
+              "value": "root"
+            }
+          ]
+        },
+        {
+          "source": "phoronix/result-file-to-json",
+          "sourceFile": "network/pts_iperf-wan-upload--metadata.json",
+          "fields": [
+            {
+              "path": "ci.client_version",
+              "value": "10.8.4"
+            },
+            {
+              "path": "ci.data.compiler-configuration",
+              "value": "--build=x86_64-linux-gnu --disable-vtable-verify --disable-werror --enable-bootstrap --enable-cet --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust --enable-libphobos-checking=release --enable-libstdcxx-backtrace --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-link-serialization=3 --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc=auto --enable-offload-defaulted --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-gcn/usr --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --program-prefix=x86_64-linux-gnu- --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-build-config=bootstrap-lto-lean --with-default-libstdcxx-abi=new --with-gcc-major-version-only --with-multilib-list=m32,m64,mx32 --with-target-system-zlib=auto --with-tune=generic --without-cuda-driver -v"
+            },
+            {
+              "path": "ci.hardware.Disk",
+              "value": "20GB"
+            },
+            {
+              "path": "ci.hardware.Memory",
+              "value": "8GB"
+            },
+            {
+              "path": "ci.hardware.Motherboard",
+              "value": "redacted"
+            },
+            {
+              "path": "ci.hardware.Processor",
+              "value": "unknown (4 Cores)"
+            },
+            {
+              "path": "ci.identifier",
+              "value": "ci"
+            },
+            {
+              "path": "ci.software.Compiler",
+              "value": "GCC 14.2.0"
+            },
+            {
+              "path": "ci.software.File-System",
+              "value": "v9fs"
+            },
+            {
+              "path": "ci.software.Kernel",
+              "value": "4.19.0-redacted (x86_64)"
+            },
+            {
+              "path": "ci.software.OS",
+              "value": "Debian GNU/Linux 13"
+            },
+            {
+              "path": "ci.software.System Layer",
+              "value": "docker"
+            },
+            {
+              "path": "ci.timestamp",
+              "value": "2026-11-03 18:58:39"
+            },
+            {
+              "path": "ci.user",
+              "value": "root"
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "metricId": "iperf_server_address_localhost_server_port_5201_duration_10_seconds_test_tcp_parallel_1",
+          "samples": [25671, 25114],
+          "aggregates": {
+            "p50": 25392.5,
+            "p95": 25643.15,
+            "mean": 25392.5,
+            "stdev": 393.85847712090697,
+            "min": 25114,
+            "max": 25671,
+            "n": 2
+          },
+          "sourceFile": "network/pts_iperf-tcp-p1.xml",
+          "ptsSampleSource": "raw-string",
+          "appVersion": "3.14",
+          "arguments": "-c localhost -p 5201 -t 10  -P 1"
+        },
+        {
+          "metricId": "iperf_server_address_localhost_server_port_5201_duration_10_seconds_test_tcp_parallel_10",
+          "samples": [23436, 23010],
+          "aggregates": {
+            "p50": 23223,
+            "p95": 23414.7,
+            "mean": 23223,
+            "stdev": 301.22748878546923,
+            "min": 23010,
+            "max": 23436,
+            "n": 2
+          },
+          "sourceFile": "network/pts_iperf-tcp-p10.xml",
+          "ptsSampleSource": "raw-string",
+          "appVersion": "3.14",
+          "arguments": "-c localhost -p 5201 -t 10  -P 10"
+        },
+        {
+          "metricId": "iperf_server_address_localhost_server_port_5201_duration_10_seconds_test_udp_10000mbit_objective_parallel_1",
+          "samples": [288, 274],
+          "aggregates": {
+            "p50": 281,
+            "p95": 287.3,
+            "mean": 281,
+            "stdev": 9.899494936611665,
+            "min": 274,
+            "max": 288,
+            "n": 2
+          },
+          "sourceFile": "network/pts_iperf-udp-10g.xml",
+          "ptsSampleSource": "raw-string",
+          "appVersion": "3.14",
+          "arguments": "-c localhost -p 5201 -t 10 -u -b 10000m -P 1"
+        },
+        {
+          "metricId": "iperf_wan_direction_download",
+          "samples": [1774.88, 1763.6],
+          "aggregates": {
+            "p50": 1769.24,
+            "p95": 1774.316,
+            "mean": 1769.24,
+            "stdev": 7.976164491784398,
+            "min": 1763.6,
+            "max": 1774.88,
+            "n": 2
+          },
+          "sourceFile": "network/pts_iperf-wan-download.xml",
+          "ptsSampleSource": "raw-string",
+          "appVersion": "3.14",
+          "arguments": "-R"
+        },
+        {
+          "metricId": "iperf_wan_direction_upload",
+          "samples": [53.74, 57.78],
+          "aggregates": {
+            "p50": 55.760000000000005,
+            "p95": 57.578,
+            "mean": 55.760000000000005,
+            "stdev": 2.8567113959936488,
+            "min": 53.74,
+            "max": 57.78,
+            "n": 2
+          },
+          "sourceFile": "network/pts_iperf-wan-upload.xml",
+          "ptsSampleSource": "raw-string",
+          "appVersion": "3.14"
+        },
+        {
+          "metricId": "network_dns_cold_docker_io_ms",
+          "samples": [10],
+          "aggregates": {
+            "p50": 10,
+            "p95": 10,
+            "mean": 10,
+            "stdev": 0,
+            "min": 10,
+            "max": 10,
+            "n": 1
+          },
+          "sourceFile": "network/network-dns--cold--docker.io.json"
+        },
+        {
+          "metricId": "network_dns_cold_github_com_ms",
+          "samples": [8],
+          "aggregates": {
+            "p50": 8,
+            "p95": 8,
+            "mean": 8,
+            "stdev": 0,
+            "min": 8,
+            "max": 8,
+            "n": 1
+          },
+          "sourceFile": "network/network-dns--cold--github.com.json"
+        },
+        {
+          "metricId": "network_dns_cold_pypi_org_ms",
+          "samples": [27],
+          "aggregates": {
+            "p50": 27,
+            "p95": 27,
+            "mean": 27,
+            "stdev": 0,
+            "min": 27,
+            "max": 27,
+            "n": 1
+          },
+          "sourceFile": "network/network-dns--cold--pypi.org.json"
+        },
+        {
+          "metricId": "network_dns_cold_registry_npmjs_org_ms",
+          "samples": [11],
+          "aggregates": {
+            "p50": 11,
+            "p95": 11,
+            "mean": 11,
+            "stdev": 0,
+            "min": 11,
+            "max": 11,
+            "n": 1
+          },
+          "sourceFile": "network/network-dns--cold--registry.npmjs.org.json"
+        },
+        {
+          "metricId": "network_dns_cold_rubygems_org_ms",
+          "samples": [107],
+          "aggregates": {
+            "p50": 107,
+            "p95": 107,
+            "mean": 107,
+            "stdev": 0,
+            "min": 107,
+            "max": 107,
+            "n": 1
+          },
+          "sourceFile": "network/network-dns--cold--rubygems.org.json"
+        },
+        {
+          "metricId": "network_download_node_v22_23_1_linux_x64_mbits_per_sec",
+          "samples": [2235.136384],
+          "aggregates": {
+            "p50": 2235.136384,
+            "p95": 2235.136384,
+            "mean": 2235.136384,
+            "stdev": 0,
+            "min": 2235.136384,
+            "max": 2235.136384,
+            "n": 1
+          },
+          "sourceFile": "network/network-download--speed.json"
+        },
+        {
+          "metricId": "network_https_api_github_com_total_ms",
+          "samples": [
+            27.316, 125.621, 37.859, 27.105, 49.686, 37.936, 26.769, 27.275, 26.208, 38.951, 40.171,
+            27.467, 27.026, 27.956, 26.058, 37.574, 27.69, 43.58, 28.318, 28.133, 49.052, 28.22,
+            30.065, 29.939, 28.211, 28.325, 39.509, 39.602, 38.862, 41.331
+          ],
+          "aggregates": {
+            "p50": 29.131999999999998,
+            "p95": 49.4007,
+            "mean": 36.39383333333333,
+            "stdev": 18.298993741099032,
+            "min": 26.058,
+            "max": 125.621,
+            "n": 30
+          },
+          "sourceFile": "network/network-latency.json"
+        },
+        {
+          "metricId": "network_https_auth_docker_io_registry_token_total_ms",
+          "samples": [
+            128.642, 116.231, 114.364, 120.048, 119.799, 139.311, 117.356, 118.085, 125.652,
+            145.565, 157.08, 119.008, 154.837, 120.698, 125.669, 138.778, 132.808, 142.54, 109.475,
+            122.883, 120.781, 139.838, 134.441, 166.971, 145.169, 144.111, 146.098, 134.089,
+            151.427, 136.356
+          ],
+          "aggregates": {
+            "p50": 133.4485,
+            "p95": 156.07065,
+            "mean": 132.93699999999998,
+            "stdev": 14.495334000743254,
+            "min": 109.475,
+            "max": 166.971,
+            "n": 30
+          },
+          "sourceFile": "network/network-latency.json"
+        },
+        {
+          "metricId": "network_https_crates_io_total_ms",
+          "samples": [
+            26.27, 30.7, 45.534, 34.814, 29.249, 38.698, 38.053, 64.369, 34.674, 31.09, 32.604,
+            30.136, 39.534, 29.209, 26.526, 44.651, 35.254, 25.013, 28.911, 26.454, 29.029, 26.587,
+            24.904, 26.04, 26.19, 22.56, 30.818, 23.061, 26.439, 23.661
+          ],
+          "aggregates": {
+            "p50": 29.229,
+            "p95": 45.136649999999996,
+            "mean": 31.70106666666667,
+            "stdev": 8.619300975470523,
+            "min": 22.56,
+            "max": 64.369,
+            "n": 30
+          },
+          "sourceFile": "network/network-latency.json"
+        },
+        {
+          "metricId": "network_https_files_pythonhosted_org_total_ms",
+          "samples": [
+            26.264, 21.672, 22.844, 23.002, 22.381, 20.659, 20.278, 22.416, 26.068, 24.417, 27.658,
+            28.018, 32.03, 22.722, 26.714, 27.372, 24.631, 24.976, 25.862, 18.941, 22.745, 21.72,
+            23.605, 20.982, 22.791, 21.07, 22.61, 20.253, 25.649, 22.323
+          ],
+          "aggregates": {
+            "p50": 22.817500000000003,
+            "p95": 27.856,
+            "mean": 23.755766666666666,
+            "stdev": 2.8651251724877547,
+            "min": 18.941,
+            "max": 32.03,
+            "n": 30
+          },
+          "sourceFile": "network/network-latency.json"
+        },
+        {
+          "metricId": "network_https_gcr_io_v2_total_ms",
+          "samples": [
+            57.711, 47.031, 56.342, 76.047, 63.807, 53.619, 47.042, 49.08, 52.558, 49.311, 45.788,
+            148.085, 46.257, 47.177, 47.729, 52.695, 44.826, 49.667, 46.494, 53.359, 48.569, 48.08,
+            51.439, 53.187, 49.529, 53.739, 56.626, 48.731, 49.95, 48.96
+          ],
+          "aggregates": {
+            "p50": 49.598,
+            "p95": 70.53899999999996,
+            "mean": 54.781166666666664,
+            "stdev": 18.68387274165709,
+            "min": 44.826,
+            "max": 148.085,
+            "n": 30
+          },
+          "sourceFile": "network/network-latency.json"
+        },
+        {
+          "metricId": "network_https_ghcr_io_v2_total_ms",
+          "samples": [
+            106.949, 107.391, 117.799, 108.146, 96.759, 118.207, 112.026, 105.71, 94.921, 105.49,
+            94.359, 102.533, 109.917, 99.5, 107.161, 113.035, 102.774, 113.377, 113.071, 91.079,
+            118.136, 120.891, 106.294, 112.173, 106.665, 91.039, 101.991, 106.768, 106.854, 110.627
+          ],
+          "aggregates": {
+            "p50": 106.9015,
+            "p95": 118.17505,
+            "mean": 106.7214,
+            "stdev": 7.853334537107413,
+            "min": 91.039,
+            "max": 120.891,
+            "n": 30
+          },
+          "sourceFile": "network/network-latency.json"
+        },
+        {
+          "metricId": "network_https_github_com_total_ms",
+          "samples": [
+            91.871, 50.557, 112.753, 55.045, 51.282, 99.541, 54.52, 91.122, 134.171, 79.264, 58.123,
+            81.629, 75.209, 75.165, 110.777, 91.587, 55.039, 49.955, 80.902, 72.601, 46.285, 77.493,
+            85.607, 80.494, 47.263, 80.88, 91.578, 90.31, 75.892, 47.12
+          ],
+          "aggregates": {
+            "p50": 78.3785,
+            "p95": 111.8638,
+            "mean": 76.46783333333332,
+            "stdev": 21.987011220708023,
+            "min": 46.285,
+            "max": 134.171,
+            "n": 30
+          },
+          "sourceFile": "network/network-latency.json"
+        },
+        {
+          "metricId": "network_https_index_crates_io_config_total_ms",
+          "samples": [
+            21.727, 19.953, 22.022, 23.982, 22.733, 18.934, 25.181, 18.967, 19.528, 21.32, 20.207,
+            18.32, 20.365, 19.357, 20.964, 21.369, 19.425, 20.99, 36.879, 21.272, 23.664, 23.022,
+            23.042, 18.556, 22.096, 21.044, 19.017, 20.913, 21.246, 21.329
+          ],
+          "aggregates": {
+            "p50": 21.145,
+            "p95": 24.641449999999995,
+            "mean": 21.5808,
+            "stdev": 3.3475937977124346,
+            "min": 18.32,
+            "max": 36.879,
+            "n": 30
+          },
+          "sourceFile": "network/network-latency.json"
+        },
+        {
+          "metricId": "network_https_pypi_org_total_ms",
+          "samples": [
+            21.451, 21.73, 21.847, 18.48, 22.068, 21.572, 27.335, 20.918, 21.704, 19.9, 20.083,
+            19.498, 23.733, 21.199, 21.707, 22.037, 21.786, 22.836, 23.178, 22.221, 25.575, 22.913,
+            22.633, 27.91, 24.446, 21.293, 21.975, 23.54, 21.397, 23.804
+          ],
+          "aggregates": {
+            "p50": 21.911,
+            "p95": 26.542999999999996,
+            "mean": 22.358966666666664,
+            "stdev": 2.0384661827366486,
+            "min": 18.48,
+            "max": 27.91,
+            "n": 30
+          },
+          "sourceFile": "network/network-latency.json"
+        },
+        {
+          "metricId": "network_https_raw_githubusercontent_com_total_ms",
+          "samples": [
+            22.408, 21.213, 25.482, 21.569, 20.679, 19.532, 18.374, 18.967, 18.555, 20.402, 20.573,
+            21.73, 21.795, 23.829, 24.964, 23.161, 23.635, 30.791, 25.781, 23.736, 25.992, 23.705,
+            20.186, 20.419, 20.885, 24.353, 21.324, 20.483, 21.906, 21.761
+          ],
+          "aggregates": {
+            "p50": 21.7455,
+            "p95": 25.89705,
+            "mean": 22.272999999999996,
+            "stdev": 2.643119134397976,
+            "min": 18.374,
+            "max": 30.791,
+            "n": 30
+          },
+          "sourceFile": "network/network-latency.json"
+        },
+        {
+          "metricId": "network_https_registry_npmjs_org_total_ms",
+          "samples": [
+            45.759, 48.565, 39.494, 41.311, 48.628, 56.255, 45.119, 55.226, 49.222, 46.139, 47.342,
+            48.938, 129.615, 44.71, 45.042, 40.668, 41.89, 43.737, 43.655, 44.005, 46.595, 44.771,
+            39.633, 40.794, 43.36, 42.955, 45.054, 45.993, 43.861, 42.578
+          ],
+          "aggregates": {
+            "p50": 44.9065,
+            "p95": 55.79195,
+            "mean": 48.03046666666666,
+            "stdev": 15.89075690290197,
+            "min": 39.494,
+            "max": 129.615,
+            "n": 30
+          },
+          "sourceFile": "network/network-latency.json"
+        },
+        {
+          "metricId": "usd_per_hour",
+          "samples": [0.012054794520547946],
+          "aggregates": {
+            "p50": 0.012054794520547946,
+            "p95": 0.012054794520547946,
+            "mean": 0.012054794520547946,
+            "stdev": 0,
+            "min": 0.012054794520547946,
+            "max": 0.012054794520547946,
+            "n": 1
+          },
+          "derived": true
+        }
+      ],
+      "suitesCovered": ["network"],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "agent37-vm",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "blaxel",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "boat",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "brezel",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "daytona-container",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "daytona-vm",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "digitalocean",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "e2b",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "freestyle",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "microsandbox-cloud",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "modal-gvisor",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "modal-vm",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "namespace",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "novita",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "runcloud",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "tama",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    },
+    {
+      "providerId": "vercel",
+      "costEvidence": [],
+      "artifactEvidence": [],
+      "validationStatus": "pending",
+      "observedSpecs": {},
+      "metrics": [],
+      "suitesCovered": [],
+      "gaps": [],
+      "uncatalogued": []
+    }
+  ]
+}

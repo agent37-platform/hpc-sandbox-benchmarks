@@ -239,6 +239,7 @@ Do this in the GitHub UI (Settings → Environments / Rules / Actions), then del
    | `FREESTYLE_API_KEY` | Freestyle provider runtime and validation |
    | `BREZEL_API_KEY` | Brezel provider runtime and validation |
    | `DIGITAL_OCEAN_TOKEN` | DigitalOcean MicroVMs provider runtime and validation |
+   | `AGENT37_API_KEY` | Agent37, Agent37 (VM) provider runtime and validation |
    <!-- <<< end generated: provider-secrets -->
 
    For Boat, a key created with the `ci` preset is insufficient: that preset omits

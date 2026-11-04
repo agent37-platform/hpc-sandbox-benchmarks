@@ -1,0 +1,28 @@
+{
+  "name": "@sandbox-benchmarks/agent37",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Agent37 sandbox integration for driverkit.",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": "./src/index.ts",
+    "./sandbox": "./src/sandbox.ts",
+    "./vm": "./src/vm.ts",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@sandbox-benchmarks/driver": "workspace:*",
+    "@sandbox-benchmarks/schema": "workspace:*",
+    "arktype": "catalog:"
+  },
+  "devDependencies": {
+    "@repo/tsconfig": "workspace:*",
+    "@types/bun": "catalog:",
+    "typescript": "catalog:"
+  }
+}
